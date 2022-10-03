@@ -1,7 +1,13 @@
+
+import * as React from "react";
+import { Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline mt-10">
-      Hello world!
-    </h1>
-  )
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+      </Routes>
+  );
 }
